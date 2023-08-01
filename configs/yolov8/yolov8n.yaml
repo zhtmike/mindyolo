@@ -4,6 +4,8 @@ __BASE__: [
   './yolov8-base.yaml'
 ]
 
+weight: /home/mindocr/mikecheung/model/yolov8-n_500e_mAP372-cc07f5bd.ckpt
+
 network:
   depth_multiple: 0.33  # scales module repeats
   width_multiple: 0.25  # scales convolution channels

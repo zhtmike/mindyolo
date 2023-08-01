@@ -72,3 +72,6 @@ test_temp_summary_event_file/
 
 # lite opencl compile file
 *.cl.inc
+
+rank_*/
+runs/

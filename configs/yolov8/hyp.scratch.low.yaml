@@ -6,7 +6,7 @@ optimizer:
   momentum: 0.937  # SGD momentum/Adam beta1
   nesterov: True  # update gradients with NAG(Nesterov Accelerated Gradient) algorithm
   loss_scale: 1.0  # loss scale for optimizer
-  warmup_epochs: 3  # warmup epochs (fractions ok)
+  warmup_epochs: 1  # warmup epochs (fractions ok)
   warmup_momentum: 0.8  # warmup initial momentum
   warmup_bias_lr: 0.1  # warmup initial bias lr
   min_warmup_step: 1000  # minimum warmup step
@@ -27,7 +27,7 @@ data:
 
   # multi-stage data augment
   train_transforms: {
-    stage_epochs: [ 490, 10 ],
+    stage_epochs: [ 90, 10 ],
     trans_list: [
       [
         {func_name: mosaic, prob: 1.0, degrees: 0.0, translate: 0.1, scale: 0.5, shear: 0.0},

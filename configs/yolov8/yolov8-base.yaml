@@ -1,4 +1,4 @@
-epochs: 500  # total train epochs
+epochs: 100  # total train epochs
 per_batch_size: 16  # 16 * 8 = 128
 img_size: 640
 iou_thres: 0.7
@@ -8,7 +8,7 @@ opencv_threads_num: 0  # opencv: disable threading optimizations
 
 network:
   model_name: yolov8
-  nc: 80  # number of classes
+  nc: 5  # number of classes
   reg_max: 16
 
   stride: [8, 16, 32]
