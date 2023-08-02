@@ -2,13 +2,13 @@
 
 optimizer:
   optimizer: momentum
-  lr_init: 0.01  # initial learning rate (SGD=1E-2, Adam=1E-3)
+  lr_init: 0.005  # initial learning rate (SGD=1E-2, Adam=1E-3)
   momentum: 0.937  # SGD momentum/Adam beta1
   nesterov: True  # update gradients with NAG(Nesterov Accelerated Gradient) algorithm
   loss_scale: 1.0  # loss scale for optimizer
   warmup_epochs: 1  # warmup epochs (fractions ok)
   warmup_momentum: 0.8  # warmup initial momentum
-  warmup_bias_lr: 0.1  # warmup initial bias lr
+  warmup_bias_lr: 0.05  # warmup initial bias lr
   min_warmup_step: 1000  # minimum warmup step
   group_param: yolov8  # group param strategy
   gp_weight_decay: 0.0005  # group param weight decay 5e-4
